@@ -3,7 +3,7 @@ Dot Files
 
 This is a list of the various dot files I use.
 
- * .vimrc: user configuration for Vim.
+ * **.vimrc:** user configuration for Vim.
 
 	```
 	cd ~
@@ -11,7 +11,7 @@ This is a list of the various dot files I use.
 	ln -s  dot-files/vimrc .vimrc
 	```
 
- * .bash_profile: bash configuration.
+ * **.bash_profile:** bash configuration.
 
 	```
 	cd ~
