@@ -1,15 +1,21 @@
 Dot Files
 =========
 
-This is a list of the various dot files I use.
+Installation
+------------
 
-1. Start by cloning the repository in ```~/dot-files```:
+ 1. Start by cloning the repository in ```~/dot-files```:
 
-```
-git clone https://github.com/guillaumeaubert/dot-files.git dot-files
-```
+	```
+	git clone https://github.com/guillaumeaubert/dot-files.git dot-files
+	```
 
-2. Then symlink the files you are interested in:
+ 2. Then symlink the files you are interested in (see below).
+
+List of files
+-------------
+
+Here is the list of the various dot files I use:
 
  * **.vimrc:** user configuration for Vim.
 
