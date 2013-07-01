@@ -1,4 +1,4 @@
-dot-files
+Dot Files
 =========
 
-Dot files
+This is a list of the various dot files I use.
