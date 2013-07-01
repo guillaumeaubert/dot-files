@@ -1,0 +1,10 @@
+[color]
+	diff = auto
+	ui = always
+[user]
+	name = Guillaume Aubert
+	email = aubertg@cpan.org
+[core]
+	editor = vim
+[alias]
+	graph = log --graph --all --oneline

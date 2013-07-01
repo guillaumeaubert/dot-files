@@ -32,3 +32,12 @@ Here is the list of the various dot files I use:
 	mv .bash_profile .bash_profile.original
 	ln -s  dot-files/bash_profile .bash_profile
 	```
+
+ * **.gitconfig:** global configuration for Git.
+
+	```
+	cd ~
+	mv .gitconfig .gitconfig.original
+	ln -s  dot-files/gitconfig .gitconfig
+	```
+
