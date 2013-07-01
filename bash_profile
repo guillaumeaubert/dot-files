@@ -20,6 +20,7 @@ source ~/perl5/perlbrew/etc/bashrc
 
 alias distb="perl Build.PL && ./Build && ./Build disttest && ./Build distclean"
 
+# Git auto-complete.
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
