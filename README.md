@@ -41,3 +41,11 @@ Here is the list of the various dot files I use:
 	ln -s  dot-files/gitconfig .gitconfig
 	```
 
+ * **.netrc:** login and password information for remote logins. Enables https checkouts for GitHub.
+
+	```
+	cd ~
+	cp dot-files/netrc .netrc
+	# Don't forget to edit the password(s) inside.
+	```
+
