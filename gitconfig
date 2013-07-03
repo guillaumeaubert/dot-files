@@ -7,4 +7,4 @@
 [core]
 	editor = vim
 [alias]
-	graph = log --graph --all --oneline
+	graph = log --graph --pretty=format:'%C(green)%h%Creset - %C(bold blue)%an%Creset - %C(yellow)%d%Creset %s %C(white)(%cr)%Creset'
