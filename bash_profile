@@ -16,5 +16,5 @@ alias distb="perl Build.PL && ./Build && ./Build disttest && ./Build distclean"
 
 # Git auto-complete.
 if [ -f ~/dot-files/git-completion.bash ]; then
-  . ~/dot-files/git-completion.bash
+  . ~/dot-files/bash_includes/git-completion.sh
 fi
