@@ -8,3 +8,8 @@ set mouse-=a
 
 " Restore regular pasting supported by the terminal.
 set paste
+
+" Hard tabs, 2 space indent.
+set noexpandtab
+set shiftwidth=2
+set tabstop=2
