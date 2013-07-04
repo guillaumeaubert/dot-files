@@ -12,6 +12,9 @@ Installation
 
  2. Then symlink the files you are interested in (see below).
 
+Alternatively, you can install **all** the symlinks at once using`install.sh`.
+
+
 List of files
 -------------
 
