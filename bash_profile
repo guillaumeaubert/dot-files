@@ -18,3 +18,6 @@ alias distb="perl Build.PL && ./Build && ./Build disttest && ./Build distclean"
 if [ -f ~/dot-files/git-completion.bash ]; then
   . ~/dot-files/bash_includes/git-completion.sh
 fi
+
+# Git author statistics.
+alias gastats='git ls-files -z | xargs -0n1 git blame -w | perl -n -e '"'"'/^.*?\((.*?)\s+[\d]{4}/; print ">$1<\n"'"'"' | sort -f | uniq -c | sort -n'
