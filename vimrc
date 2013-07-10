@@ -14,5 +14,10 @@ set noexpandtab
 set shiftwidth=2
 set tabstop=2
 
-" Add status bar.
+" Show cursor position.
 set ruler
+
+" Add status bar.
+set laststatus=2
+set statusline=%<%f\ %h%m%r%a%=%y\ 0x%B\ %l,%c%V\ %P
+hi StatusLine ctermfg=Gray ctermbg=Black
