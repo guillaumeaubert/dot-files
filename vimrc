@@ -24,3 +24,7 @@ hi StatusLine ctermfg=Gray ctermbg=Black
 
 " Jump to matches as you type the search.
 set incsearch
+
+" Increase/decrease indentation with >/< in visual mode.
+:vnoremap < <gv
+:vnoremap > >gv
