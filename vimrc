@@ -19,7 +19,7 @@ set ruler
 
 " Add status bar.
 set laststatus=2
-set statusline=%<%f\ %h%m%r%a%=%y\ 0x%B\ %l,%c%V\ %P
+set statusline=%<%f\ %h%m%r%a%=%y\ [%{&ff}]\ 0x%B\ %l,%c%V\ [%p%%]\ %P
 hi StatusLine ctermfg=Gray ctermbg=Black
 
 " Jump to matches as you type the search.
