@@ -26,5 +26,5 @@ hi StatusLine ctermfg=Gray ctermbg=Black
 set incsearch
 
 " Increase/decrease indentation with >/< in visual mode.
-:vnoremap < <gv
-:vnoremap > >gv
+vnoremap < <gv
+vnoremap > >gv
