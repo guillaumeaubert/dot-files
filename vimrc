@@ -28,3 +28,6 @@ set incsearch
 " Increase/decrease indentation with >/< in visual mode.
 vnoremap < <gv
 vnoremap > >gv
+
+" Highlight search matches.
+set hlsearch
