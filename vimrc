@@ -31,3 +31,6 @@ vnoremap > >gv
 
 " Highlight search matches.
 set hlsearch
+
+" Perl: align '=>' in hashes (requires Align.vim).
+map <buffer> <space>l  :Align<space>=><CR>
