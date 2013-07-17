@@ -55,3 +55,13 @@ augroup resCur
 	autocmd!
 	autocmd BufWinEnter * call ResCur()
 augroup END
+
+" Maintain history between sessions.
+" (requires vim 7.3)
+try
+	set undofile                " Save history.
+	set undodir=$HOME/.vim/undo " Directory to save history in.
+	set undolevels=1000         " Undo levels to maintain.
+	set undoreload=10000        " Max lines to save.
+catch
+endtry
