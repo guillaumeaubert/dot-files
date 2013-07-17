@@ -24,3 +24,6 @@ alias gastats='git ls-files -z | xargs -0n1 git blame -w | perl -n -e '"'"'/^.*?
 
 # Add lib/ to 'prove' and make it recursive by default.
 alias prove='prove -I lib -r'
+
+# Add an easy way to test Perl files.
+alias t='perl -I lib -T'
