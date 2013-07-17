@@ -65,3 +65,10 @@ try
 	set undoreload=10000        " Max lines to save.
 catch
 endtry
+
+" Add git diff information in the left gutter.
+let g:gitgutter_eager = 0
+highlight GitGutterAdd ctermbg=grey ctermfg=black
+highlight GitGutterChange ctermbg=grey ctermfg=black
+highlight GitGutterDelete ctermbg=grey ctermfg=black
+highlight GitGutterChangeDelete ctermbg=grey ctermfg=black
