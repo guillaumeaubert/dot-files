@@ -10,4 +10,4 @@
 	graph = log --graph --pretty=format:'%C(green)%h%Creset - %C(bold blue)%an%Creset - %C(yellow)%d%Creset %s %C(white)(%cr)%Creset'
 	changes = diff --name-status -r
 	diffstat = diff --stat -r
-	diffw = diff --word-diff-regex=.
+	dw = diff --color-words=.
