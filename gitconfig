@@ -11,3 +11,5 @@
 	changes = diff --name-status -r
 	diffstat = diff --stat -r
 	dw = diff --color-words=.
+[log]
+	date = local
