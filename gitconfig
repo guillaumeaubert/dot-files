@@ -13,3 +13,5 @@
 	dw = diff --color-words=.
 [log]
 	date = local
+[help]
+	autocorrect = 1
