@@ -36,3 +36,6 @@ export TZ="/usr/share/zoneinfo/America/Los_Angeles"
 
 # Alias vim, since I use it all the time.
 alias v='vim'
+
+# Message of the day.
+echo '>>' $(uptime) '<<'
