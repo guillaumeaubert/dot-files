@@ -52,3 +52,11 @@ Here is the list of the various dot files I use:
 	# Don't forget to edit the password(s) inside.
 	```
 
+ * **.hushlogin:** disable the global message of the day when you log in.
+
+	```
+	cd ~
+	mv .hushlogin .hushlogin.original
+	ln -s  dot-files/hushlogin .hushlogin
+	```
+
