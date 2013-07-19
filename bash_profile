@@ -39,3 +39,6 @@ alias v='vim'
 
 # Message of the day.
 perl -le 'print "-" x `tput cols`, "\n", `uptime`, "-" x `tput cols`';
+
+# Load in the git branch prompt script.
+source ~/dot-files/git/prompt.sh
