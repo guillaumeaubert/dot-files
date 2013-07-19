@@ -38,4 +38,4 @@ export TZ="/usr/share/zoneinfo/America/Los_Angeles"
 alias v='vim'
 
 # Message of the day.
-echo '>>' $(uptime) '<<'
+perl -le 'print "-" x `tput cols`, "\n", `uptime`, "-" x `tput cols`';
