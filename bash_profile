@@ -28,7 +28,9 @@ alias prove='prove -I lib -r'
 # Add an easy way to test Perl files.
 alias t='perl -I lib -T'
 
-# Support colors in 'less' and set tabs to 2 spaces.
+# Tweak the behavior of less:
+#     - support colors (-R);
+#     - set tabs to 2 spaces (-x2);
 export LESS='-R -x2'
 
 # Set the correct time zone.
