@@ -12,6 +12,7 @@
 	changes = diff --name-status -r
 	diffstat = diff --stat -r
 	dw = diff --color-words=.
+	taglist = log --tags --simplify-by-decoration --date=rfc --pretty='format:%ci %d'
 [log]
 	date = local
 [help]
