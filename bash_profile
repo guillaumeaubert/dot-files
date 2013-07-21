@@ -50,3 +50,6 @@ export GIT_PS1_SHOWUNTRACKEDFILES=1 # % for untracked files.
 
 # Display the current directory.
 alias p='pwd'
+
+# Use utf8.
+export LANG=fr_FR.UTF-8
