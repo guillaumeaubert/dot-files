@@ -78,3 +78,6 @@ highlight GitGutterChangeDelete ctermbg=grey ctermfg=black
 " See http://vim.wikia.com/wiki/Highlight_unwanted_spaces
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace / \+\%#\@<!$/
+
+" Add the file name to the terminal windows' title.
+set title
