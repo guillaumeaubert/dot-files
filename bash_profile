@@ -38,6 +38,7 @@ export TZ="/usr/share/zoneinfo/America/Los_Angeles"
 
 # Alias vim, since I use it all the time.
 alias v='vim'
+alias sv="sudo -E vim"
 
 # Message of the day.
 perl -le 'print "-" x `tput cols`, "\n", `uptime`, "-" x `tput cols`';
@@ -55,3 +56,6 @@ alias p='pwd'
 
 # Use utf8.
 export LANG=en_US.UTF-8
+
+# Alias sudo, since I use it often.
+alias s="sudo -E"
