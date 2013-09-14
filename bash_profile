@@ -8,8 +8,10 @@ if [ -d ~/bin ] ; then
     PATH=~/bin:"${PATH}"
 fi
 
-# Enable Perlbrew.
-source ~/perl5/perlbrew/etc/bashrc
+# Enable Perlbrew if it is installed.
+type perlbrew >/dev/null 2>&1 && {
+	source ~/perl5/perlbrew/etc/bashrc
+}
 
 # Alias to rebuild my CPAN distributions.
 alias distb="perl Build.PL && ./Build && ./Build disttest && ./Build distclean"
