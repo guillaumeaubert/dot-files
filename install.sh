@@ -6,6 +6,7 @@ IGNORED_FILES='
 	LICENSE
 	README.md
 	install.sh
+	tools
 '
 
 # Create a backup directory for the files we're going to replace.
