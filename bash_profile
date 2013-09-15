@@ -61,3 +61,6 @@ export LANG=en_US.UTF-8
 
 # Alias sudo, since I use it often.
 alias s="sudo -E"
+
+# Set up line counter.
+alias cloc="perl $HOME/dot-files/tools/cloc-1.60.pl --read-lang-def=$HOME/dot-files/tools/cloc_definitions.txt"
