@@ -73,11 +73,10 @@ highlight GitGutterChange ctermbg=grey ctermfg=black
 highlight GitGutterDelete ctermbg=grey ctermfg=black
 highlight GitGutterChangeDelete ctermbg=grey ctermfg=black
 
-" Highlight trailing whitespace, except when typing at the end of a line. This
-" ignores tabs, which I use for indentation on blank lines.
+" Highlight trailing whitespace.
 " See http://vim.wikia.com/wiki/Highlight_unwanted_spaces
 highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace / \+\%#\@<!$/
+match ExtraWhitespace /\s\+$/
 
 " Add the file name to the terminal windows' title.
 set title
