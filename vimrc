@@ -80,3 +80,6 @@ match ExtraWhitespace /\s\+$/
 
 " Add the file name to the terminal windows' title.
 set title
+
+" :W allows saving read-only files as root.
+command W w !sudo tee % >/dev/null
