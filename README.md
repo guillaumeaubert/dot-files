@@ -60,6 +60,14 @@ Here is the list of the various dot files I use:
 	ln -s  dot-files/hushlogin .hushlogin
 	```
 
+ * **.psqlrc:** psql configuration.
+
+	```
+	cd ~
+	mv .psqlrc .psqlrc.original
+	ln -s dot-files/psqlrc .psqlrc
+
+
 License
 -------
 
