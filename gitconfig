@@ -21,3 +21,5 @@
 	default = simple
 [diff]
 	algorithm = patience
+[color "diff"]
+	whitespace = red reverse
