@@ -16,6 +16,9 @@ type perlbrew >/dev/null 2>&1 && {
 # Alias to rebuild my CPAN distributions.
 alias distb="perl Build.PL && ./Build && ./Build disttest && ./Build distclean"
 
+# Alias to upload my CPAN distributions to PAUSE.
+alias distupload='cpan-upload-http -user AUBERTG -mailto aubertg@cpan.org -verbose'
+
 # Git auto-complete.
 if [ -f ~/dot-files/git-completion.bash ]; then
   . ~/dot-files/bash_includes/git-completion.sh
