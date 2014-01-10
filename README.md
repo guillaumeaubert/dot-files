@@ -68,6 +68,14 @@ Here is the list of the various dot files I use:
 	ln -s dot-files/psqlrc .psqlrc
 
 
+ * **.dmrc:** per-user language configuration/support.
+
+	```
+	cd ~
+	mv .dmrc .dmrc.original
+	ln -s dot-files/dmrc .dmrc
+
+
 License
 -------
 
