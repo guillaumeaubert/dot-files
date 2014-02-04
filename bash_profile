@@ -70,3 +70,8 @@ alias cloc="perl $HOME/dot-files/tools/cloc-1.60.pl --read-lang-def=$HOME/dot-fi
 
 # Alias to inspect memory use.
 alias ps_mem="sudo python $HOME/dot-files/tools/ps_mem/ps_mem.py"
+
+# Enable appending to the history file instead of replacing it (histappend) and
+# attempt to save correctly all the lines of a multiple lines command
+# (cmdhist).
+shopt -s histappend cmdhist
