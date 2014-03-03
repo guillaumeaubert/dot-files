@@ -83,3 +83,10 @@ set title
 
 " :W allows saving read-only files as root.
 command W w !sudo tee % >/dev/null
+
+" Yank/delete/paste from a named register, to prevent the pasted-over content
+" from taking the place of the pasted content.
+vnoremap p "0p
+vnoremap P "0P
+vnoremap y "0y
+vnoremap d "0d
