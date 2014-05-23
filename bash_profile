@@ -75,3 +75,10 @@ alias ps_mem="sudo python $HOME/dot-files/tools/ps_mem/ps_mem.py"
 # attempt to save correctly all the lines of a multiple lines command
 # (cmdhist).
 shopt -s histappend cmdhist
+
+# Find out the version of an installed Perl module.
+pmver ()
+{
+	perl -M$1 -e "print \$$1::VERSION, \"\n\""
+}
+export -f pmver
