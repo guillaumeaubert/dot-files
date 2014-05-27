@@ -66,7 +66,7 @@ Here is the list of the various dot files I use:
 	cd ~
 	mv .psqlrc .psqlrc.original
 	ln -s dot-files/psqlrc .psqlrc
-
+	```
 
  * **.dmrc:** per-user language configuration/support.
 
@@ -74,6 +74,7 @@ Here is the list of the various dot files I use:
 	cd ~
 	mv .dmrc .dmrc.original
 	ln -s dot-files/dmrc .dmrc
+	```
 
 
 License
