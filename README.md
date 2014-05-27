@@ -76,6 +76,14 @@ Here is the list of the various dot files I use:
 	ln -s dot-files/dmrc .dmrc
 	```
 
+ * **.screenrc:** `screen` configuration.
+
+	```
+	cd ~
+	mv .screenrc .screenrc.original
+	ln -s dot-files/screenrc .screenrc
+	```
+
 
 License
 -------

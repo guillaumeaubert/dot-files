@@ -1,0 +1,2 @@
+# Start screens as login shells, which sets up aliases correctly.
+screen bash -l
