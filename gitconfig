@@ -17,8 +17,6 @@
 	date = local
 [help]
 	autocorrect = 1
-[push]
-	default = simple
 [diff]
 	algorithm = patience
 [color "diff"]
