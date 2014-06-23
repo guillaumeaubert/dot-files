@@ -9,9 +9,9 @@ if [ -d ~/bin ] ; then
 fi
 
 # Enable Perlbrew if it is installed.
-type perlbrew >/dev/null 2>&1 && {
+if [ -d perl5/perlbrew/ ]; then
 	source ~/perl5/perlbrew/etc/bashrc
-}
+fi
 
 # Alias to rebuild my CPAN distributions.
 alias distb="perl Build.PL && ./Build && ./Build disttest && ./Build distclean"
