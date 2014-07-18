@@ -88,3 +88,6 @@ pmver ()
 	perl -M$1 -e "print \$$1::VERSION, \"\n\""
 }
 export -f pmver
+
+# Alias for ansible-playbook.
+alias ap="ansible-playbook"
