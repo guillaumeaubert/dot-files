@@ -17,6 +17,9 @@ for file in $(ls $HOME/dot-files/); do
 	# Skip ignored files.
 	[[ $IGNORED_FILES =~ $file ]] && continue
 
+	# Skip .selected_editor unless the system is Ubuntu.
+	[[ -e /etc/lsb-release && $file -eq "selected_editor" ]] && continue
+
 	# Remove the destination file if it is a symlink, otherwise archive it.
 	if [ -e $HOME/.$file ]; then
 		if [ -L $HOME/.$file ]; then
