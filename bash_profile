@@ -23,7 +23,7 @@ fi
 alias distb="perl Build.PL && ./Build && ./Build disttest && ./Build distclean"
 
 # Alias to upload my CPAN distributions to PAUSE.
-alias distupload='cpan-upload-http -user AUBERTG -mailto aubertg@cpan.org -verbose'
+alias distupload='cpan-upload --user AUBERTG --verbose'
 
 # Git auto-complete.
 if [ -f ~/dot-files/git-completion.bash ]; then
