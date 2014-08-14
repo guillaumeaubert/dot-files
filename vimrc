@@ -1,3 +1,9 @@
+" Load Pathogen to manage vim plugins in the bundle/ directory.
+" https://github.com/tpope/vim-pathogen
+runtime bundle/pathogen/autoload/pathogen.vim
+call pathogen#infect()
+call pathogen#helptags()
+
 " Treat .t files as Perl code.
 syntax on
 filetype on
