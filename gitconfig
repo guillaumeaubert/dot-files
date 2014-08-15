@@ -14,6 +14,7 @@
 	dw = diff --color-words=.
 	taglist = log --tags --simplify-by-decoration --date=rfc --pretty='format:%ci %d'
 	all = "!curl -s https://api.github.com/users/guillaumeaubert/repos?per_page=100 | ruby -rjson -e 'JSON.load(STDIN.read).each {|repo| %x[git clone #{repo[\"ssh_url\"]} ]}'"
+	pup = "!git pull && git submodule init && git submodule update && git submodule status"
 [log]
 	date = local
 [help]
