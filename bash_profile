@@ -45,7 +45,9 @@ alias t='perl -I lib -T'
 export LESS='-R -x2'
 
 # Set the correct time zone.
-export TZ="/usr/share/zoneinfo/America/Los_Angeles"
+if [ $(whoami) != 'root' ]; then
+	export TZ="/usr/share/zoneinfo/America/Los_Angeles"
+fi
 
 # Alias vim, since I use it all the time.
 alias v='vim'
