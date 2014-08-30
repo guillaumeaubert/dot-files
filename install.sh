@@ -15,10 +15,13 @@ IGNORED_FILES='
 # Create symlinks for all the files that exist in the repository.
 for file in $(ls $HOME/dot-files/); do
 	# Skip ignored files.
-	[[ $IGNORED_FILES =~ $file ]] && continue
+	[[ $IGNORED_FILES =~ "$file" ]] && continue
 
 	# Skip .selected_editor unless the system is Ubuntu.
-	[[ -e /etc/lsb-release && $file -eq "selected_editor" ]] && continue
+	[[ -e /etc/lsb-release && "$file" = "selected_editor" ]] && continue
+
+	# Skip git version-specific files.
+	[[ "$file" =~ 'gitconfig-v' ]] && continue
 
 	# Remove the destination file if it is a symlink, otherwise archive it.
 	if [ -e $HOME/.$file ]; then
@@ -32,3 +35,9 @@ for file in $(ls $HOME/dot-files/); do
 	# Symlink our file.
 	ln -sf $HOME/dot-files/$file $HOME/.$file
 done
+
+# Special handling for .gitconfig, to account for different versions of git.
+if [[ $(perl -Mversion -le 'print version->parse(`git --version | cut -c13-`) > version->parse("2.0.0") ? 1 : 0') ]]; then
+	rm $HOME/.gitconfig
+	ln -sf "$HOME/dot-files/gitconfig-v2.0.0" "$HOME/.gitconfig"
+fi
