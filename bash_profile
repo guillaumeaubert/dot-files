@@ -93,3 +93,6 @@ export -f pmver
 
 # Alias for ansible-playbook.
 alias ap="ansible-playbook"
+
+# Tail all the possible error logs.
+alias errlog'=sudo find /var/local/www_logs/ -type f \( -name "*error.log" \) -exec tail -f /var/log/syslog /var/log/apache2/error.log  "$file" {} +'
