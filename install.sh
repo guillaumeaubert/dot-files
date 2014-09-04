@@ -37,7 +37,7 @@ for file in $(ls $HOME/dot-files/); do
 done
 
 # Special handling for .gitconfig, to account for different versions of git.
-if $(perl -Mversion -le 'exit( version->parse(`git --version | cut -c13-`) > version->parse("2.0.0") ? 1 : 0 )'); then
+if $(perl -Mversion -le 'exit( version->parse(`git --version | cut -c13-`) < version->parse("2.0.0") ? 1 : 0 )'); then
 	rm $HOME/.gitconfig
 	ln -sf "$HOME/dot-files/gitconfig-v2.0.0" "$HOME/.gitconfig"
 fi
