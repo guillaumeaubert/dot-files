@@ -7,3 +7,6 @@
 [submodule "vim/bundle/editorconfig"]
 	path = vim/bundle/editorconfig
 	url = git@github.com:editorconfig/editorconfig-vim.git
+[submodule "vim/bundle/yaml"]
+	path = vim/bundle/yaml
+	url = git@github.com:ingydotnet/yaml-vim.git
