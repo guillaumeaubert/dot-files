@@ -31,6 +31,9 @@ hi StatusLine ctermfg=Gray ctermbg=Black
 " Display list in status bar when using tab autocompletion.
 set wildmenu
 
+" I like a white background, so adjust colors accordingly.
+set background=light
+
 " Jump to matches as you type the search.
 set incsearch
 
