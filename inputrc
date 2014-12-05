@@ -1,0 +1,3 @@
+# When the directory is a symlink, auto-append the trailing slash to avoid
+# having to double-tab.
+set mark-symlinked-directories on

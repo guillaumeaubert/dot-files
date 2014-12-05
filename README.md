@@ -84,6 +84,15 @@ Here is the list of the various dot files I use:
 	ln -s dot-files/screenrc .screenrc
 	```
 
+ * **.inputrc:** customize programs that use Readline.
+
+	```
+	cd ~
+	mv .inputrc .inputrc.original
+	ln -s dot-files/inputrc .inputrc
+	```
+
+
 
 License
 -------
