@@ -10,3 +10,12 @@ set completion-ignore-case on
 
 # Use vi mode.
 set editing-mode vi
+
+# "Fn"+"left arrow" goes to the beginning of the line.
+"\e[1~": beginning-of-line
+
+# "Fn"+"right arrow" goes to the end of the line.
+"\e[4~": end-of-line
+
+# "Ctrl"+"v" shows the key code of what is used next.
+"\e[2~": quoted-insert
