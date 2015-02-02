@@ -81,6 +81,10 @@ alias ps_mem="sudo python $HOME/dot-files/tools/ps_mem/ps_mem.py"
 # (cmdhist).
 shopt -s histappend cmdhist
 
+# Checks the window size after each command and, if necessary, update the
+# values of the variables LINES and COLUMNS.
+shopt -s checkwinsize
+
 # Find out the version of an installed Perl module.
 pmver ()
 {
