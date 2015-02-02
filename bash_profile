@@ -101,6 +101,13 @@ alias errlog'=sudo find /var/local/www_logs/ -type f \( -name "*error.log" \) -e
 # Follow syslog.
 alias syslog='less +F /var/log/syslog'
 
+# Filter out noise from the command history.
+export HISTIGNORE="&:ls:exit:[ \t]*"
+
+# Increase how much the command history should store.
+export HISTSIZE=500000
+export HISTFILESIZE=5000000
+
 # Message of the day.
 printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
 uptime
