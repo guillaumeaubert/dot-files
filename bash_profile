@@ -53,9 +53,6 @@ fi
 alias v='vim'
 alias sv="sudo -E vim"
 
-# Message of the day.
-perl -le 'print "-" x `tput cols`, "\n", `uptime`, "-" x `tput cols`';
-
 # Load in the git branch prompt script.
 source ~/dot-files/git/prompt.sh
 
@@ -99,3 +96,20 @@ alias errlog'=sudo find /var/local/www_logs/ -type f \( -name "*error.log" \) -e
 
 # Follow syslog.
 alias syslog='less +F /var/log/syslog'
+
+# Message of the day.
+printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
+uptime
+printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
+if [ -x /usr/games/fortune ]
+then
+	if [ -x /usr/games/cowsay ]
+	then
+		fortune | cowsay
+		echo ''
+	else
+		echo ''
+		fortune
+		printf '\n%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
+	fi
+fi
