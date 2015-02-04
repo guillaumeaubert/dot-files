@@ -10,3 +10,6 @@
 [submodule "vim/bundle/yaml"]
 	path = vim/bundle/yaml
 	url = git@github.com:ingydotnet/yaml-vim.git
+[submodule "vim/bundle/localvimrc"]
+	path = vim/bundle/localvimrc
+	url = git@github.com:embear/vim-localvimrc.git
