@@ -108,6 +108,9 @@ export HISTIGNORE="&:ls:exit:[ \t]*"
 export HISTSIZE=500000
 export HISTFILESIZE=5000000
 
+# Don't use cowsay for ansible, to keep the logs shorter.
+export ANSIBLE_NOCOWS=1
+
 # Message of the day.
 printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
 uptime
