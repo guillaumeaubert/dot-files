@@ -104,3 +104,6 @@ vnoremap p "0p
 vnoremap P "0P
 vnoremap y "0y
 vnoremap d "0d
+
+" Allow silent local vimrc overrides for safe projects.
+let g:localvimrc_whitelist='/home/guillaume/trunk/.*'
