@@ -114,6 +114,9 @@ export ANSIBLE_NOCOWS=1
 # Use colors for grep.
 alias grep='grep --color=auto'
 
+# Retrieve the public IP of the machine.
+alias ip="curl -s http://checkip.dyndns.com/ | sed 's/[^0-9\.]//g'"
+
 # Message of the day.
 hline=$(printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | sed -e 's/ /─/g')
 echo $hline
