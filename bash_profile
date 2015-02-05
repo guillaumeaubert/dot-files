@@ -111,6 +111,9 @@ export HISTFILESIZE=5000000
 # Don't use cowsay for ansible, to keep the logs shorter.
 export ANSIBLE_NOCOWS=1
 
+# Use colors for grep.
+alias grep='grep --color=auto'
+
 # Message of the day.
 hline=$(printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | sed -e 's/ /─/g')
 echo $hline
