@@ -112,9 +112,10 @@ export HISTFILESIZE=5000000
 export ANSIBLE_NOCOWS=1
 
 # Message of the day.
-printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | sed -e 's/ /─/g'
+hline=$(printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | sed -e 's/ /─/g')
+echo $hline
 uptime
-printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | sed -e 's/ /─/g'
+echo $hline
 if [ -x /usr/games/fortune ]
 then
 	if [ -x /usr/games/cowsay ]
@@ -124,6 +125,6 @@ then
 	else
 		echo ''
 		fortune
-		printf '\n%*s\n' "${COLUMNS:-$(tput cols)}" '' | sed -e 's/ /─/g'
+		echo $hline
 	fi
 fi
