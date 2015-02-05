@@ -117,6 +117,13 @@ alias grep='grep --color=auto'
 # Retrieve the public IP of the machine.
 alias ip="curl -s http://checkip.dyndns.com/ | sed 's/[^0-9\.]//g'"
 
+# Faster directory navigation.
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias ~='cd ~'
+alias ll='tree --dirsfirst -ChFupDaLg 1'
+
 # Message of the day.
 hline=$(printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | sed -e 's/ /─/g')
 echo $hline
