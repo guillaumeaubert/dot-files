@@ -124,6 +124,11 @@ alias ....='cd ../../..'
 alias ~='cd ~'
 alias ll='tree --dirsfirst -ChFupDaLg 1'
 
+# Full dig information.
+dig_all () {
+  dig +nocmd $1 any +multiline +noall +answer
+}
+
 # Message of the day.
 hline=$(printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | sed -e 's/ /─/g')
 echo $hline
