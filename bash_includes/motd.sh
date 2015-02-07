@@ -1,5 +1,4 @@
 # Message of the day.
-hline=$(printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | sed -e 's/ /─/g')
 echo $hline
 uptime
 echo $hline

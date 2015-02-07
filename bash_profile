@@ -8,6 +8,9 @@ if [ -d ~/bin ] ; then
     PATH=~/bin:"${PATH}"
 fi
 
+# Define a vertical line.
+hline=$(printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | sed -e 's/ /─/g')
+
 # Load includes.
 source ~/dot-files/bash_includes/shopt.sh
 source ~/dot-files/bash_includes/defaults.sh
