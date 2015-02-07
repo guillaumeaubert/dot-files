@@ -1,6 +1,9 @@
 Dot Files
 =========
 
+[![Build Status](https://travis-ci.org/guillaumeaubert/dot-files.svg)](https://travis-ci.org/guillaumeaubert/dot-files)
+
+
 Installation
 ------------
 
