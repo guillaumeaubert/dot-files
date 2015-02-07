@@ -13,7 +13,7 @@ hline=$(printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | sed -e 's/ /─/g')
 
 # Do a git pull to bring in the latest updates before sourcing the includes.
 cd ~/dot-files/
-dotfiles_update=$(git pull --rebase 2>&1)
+dotfiles_update=$(git pull --rebase && git submodule update 2>&1)
 if [ "$dotfiles_update" != "Current branch master is up to date." ]; then
 	echo $hline;
 	echo $dotfiles_update;
