@@ -11,6 +11,15 @@ fi
 # Define a vertical line.
 hline=$(printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | sed -e 's/ /─/g')
 
+# Do a git pull to bring in the latest updates before sourcing the includes.
+cd ~/dot-files/
+dotfiles_update=$(git pull --rebase 2>&1)
+if [ "$dotfiles_update" != "Current branch master is up to date." ]; then
+	echo $hline;
+	echo $dotfiles_update;
+fi
+cd ~
+
 # Load includes.
 source ~/dot-files/bash_includes/shopt.sh
 source ~/dot-files/bash_includes/defaults.sh
