@@ -30,3 +30,8 @@ source ~/dot-files/bash_includes/git-completion.sh
 source ~/dot-files/bash_includes/prompt.sh
 source ~/dot-files/bash_includes/extra.sh
 source ~/dot-files/bash_includes/motd.sh
+
+# Load proprietary bash instructions.
+if [ -f ~/.bash.proprietary ]; then
+	source ~/.bash.proprietary
+fi
