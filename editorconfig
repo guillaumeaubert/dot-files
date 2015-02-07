@@ -1,0 +1,13 @@
+root = true
+
+# Defaults.
+[*]
+indent_style = tab
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+
+# YML files require spaces for indentation.
+[*.yml]
+indent_style = space
+indent_size = 2

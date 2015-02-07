@@ -108,6 +108,14 @@ Here is the list of the various dot files I use:
 	ln -s dot-files/wgetrc .wgetrc
 	```
 
+ * **.editorconfig:** defaults for editors that support an editorconfig plugin.
+
+	```
+	cd ~
+	mv .editorconfig .editorconfig.original
+	ln -s dot-files/editorconfig .editorconfig
+	```
+
 
 License
 -------
