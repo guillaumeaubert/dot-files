@@ -6,7 +6,7 @@ if [ -x /usr/games/fortune ]
 then
 	if [ -x /usr/games/cowsay ]
 	then
-		fortune | cowsay
+		/usr/games/fortune | /usr/games/cowsay
 		echo ''
 	else
 		echo ''
