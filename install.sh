@@ -39,7 +39,7 @@ done
 cd -
 
 # Special handling for .gitconfig, to account for different versions of git.
-if [ $(git --version | cut -c13) == 2 ]; then
+if [ "$(git --version | cut -c13)" == 2 ]; then
 	rm $HOME/.gitconfig
 	ln -sf "$HOME/dot-files/gitconfig-v2.0.0" "$HOME/.gitconfig"
 fi
