@@ -1,18 +1,18 @@
 [submodule "vim/bundle/pathogen"]
 	path = vim/bundle/pathogen
-	url = git@github.com:tpope/vim-pathogen.git
+	url = https://github.com/tpope/vim-pathogen.git
 [submodule "vim/bundle/gitgutter"]
 	path = vim/bundle/gitgutter
-	url = git://github.com/airblade/vim-gitgutter.git
+	url = https://github.com/airblade/vim-gitgutter.git
 [submodule "vim/bundle/editorconfig"]
 	path = vim/bundle/editorconfig
-	url = git@github.com:editorconfig/editorconfig-vim.git
+	url = https://github.com/editorconfig/editorconfig-vim.git
 [submodule "vim/bundle/yaml"]
 	path = vim/bundle/yaml
-	url = git@github.com:ingydotnet/yaml-vim.git
+	url = https://github.com/ingydotnet/yaml-vim.git
 [submodule "vim/bundle/localvimrc"]
 	path = vim/bundle/localvimrc
-	url = git@github.com:embear/vim-localvimrc.git
+	url = https://github.com/embear/vim-localvimrc.git
 [submodule "build"]
 	path = build
 	url = https://github.com/caarlos0/shell-travis-build.git
