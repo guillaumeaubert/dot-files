@@ -54,7 +54,7 @@ alias v='vim'
 alias sv="sudo -E vim"
 
 # Load in the git branch prompt script.
-source ~/dot-files/git/prompt.sh
+source ~/dot-files/bash-includes/git-prompt.sh
 
 # Change the command line prompt to display git info.
 export PS1='[\u@\h \W\[\e[32m\]$(__git_ps1 " (%s)")\[\e[m\]]\$ '
