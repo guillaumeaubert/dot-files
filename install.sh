@@ -16,13 +16,13 @@ IGNORED_FILES='
 cd $HOME/dot-files/
 for file in *; do
 	# Skip ignored files.
-	[[ $IGNORED_FILES =~ "$file" ]] && continue
+	[[ $IGNORED_FILES =~ $file ]] && continue
 
 	# Skip .selected_editor unless the system is Ubuntu.
 	[[ -e /etc/lsb-release && "$file" = "selected_editor" ]] && continue
 
 	# Skip git version-specific files.
-	[[ "$file" =~ 'gitconfig-v' ]] && continue
+	[[ "$file" =~ ^gitconfig-v ]] && continue
 
 	# Remove the destination file if it is a symlink, otherwise archive it.
 	if [ -e $HOME/.$file ]; then
