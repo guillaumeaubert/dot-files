@@ -9,3 +9,4 @@ export -f pmver
 dig_all () {
   dig +nocmd $1 any +multiline +noall +answer
 }
+export -f dig_all
