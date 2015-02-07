@@ -16,6 +16,7 @@
 	all = "!curl -s https://api.github.com/users/guillaumeaubert/repos?per_page=100 | ruby -rjson -e 'JSON.load(STDIN.read).each {|repo| %x[git clone #{repo[\"ssh_url\"]} ]}'"
 	pup = "!git pull && git submodule init && git submodule update && git submodule status"
 	pullall = "submodule foreach git pull origin master"
+	churn = "!~/dot-files/tools/git-churn.sh"
 [log]
 	date = local
 [help]
