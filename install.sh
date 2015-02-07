@@ -13,7 +13,8 @@ IGNORED_FILES='
 [ ! -d $HOME/.original ] && mkdir $HOME/.original
 
 # Create symlinks for all the files that exist in the repository.
-for file in $(ls $HOME/dot-files/); do
+cd $HOME/dot-files/
+for file in *; do
 	# Skip ignored files.
 	[[ $IGNORED_FILES =~ "$file" ]] && continue
 
@@ -35,6 +36,7 @@ for file in $(ls $HOME/dot-files/); do
 	# Symlink our file.
 	ln -sf $HOME/dot-files/$file $HOME/.$file
 done
+cd -
 
 # Special handling for .gitconfig, to account for different versions of git.
 if $(perl -Mversion -le 'exit( version->parse(`git --version | cut -c13-`) < version->parse("2.0.0") ? 1 : 0 )'); then
