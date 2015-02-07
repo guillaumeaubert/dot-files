@@ -92,6 +92,21 @@ Here is the list of the various dot files I use:
 	ln -s dot-files/inputrc .inputrc
 	```
 
+ * **.curlrc:** customize defaults for curl.
+
+	```
+	cd ~
+	mv .curlrc .curlrc.original
+	ln -s dot-files/curlrc .curlrc
+	```
+
+ * **.wgetrc:** customize defaults for wget.
+
+	```
+	cd ~
+	mv .wgetrc .wgetrc.original
+	ln -s dot-files/wgetrc .wgetrc
+	```
 
 
 License
