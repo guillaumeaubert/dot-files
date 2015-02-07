@@ -8,8 +8,8 @@ set mark-symlinked-directories on
 # Ignore case when auto-completing.
 set completion-ignore-case on
 
-# Use vi mode.
-set editing-mode vi
+# Use emacs mode.
+set editing-mode emacs
 
 # "Fn"+"left arrow" goes to the beginning of the line.
 "\e[1~": beginning-of-line
