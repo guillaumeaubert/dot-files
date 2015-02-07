@@ -50,3 +50,6 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias ~='cd ~'
 alias ll='tree --dirsfirst -ChFupDaLg 1'
+
+# Reload the shell.
+alias reload="exec $SHELL -l"
