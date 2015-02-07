@@ -8,7 +8,7 @@ if [ -d ~/bin ] ; then
     PATH=~/bin:"${PATH}"
 fi
 
-# Define a vertical line.
+# Define a horizontal line.
 hline=$(printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | sed -e 's/ /─/g')
 
 # Do a git pull to bring in the latest updates before sourcing the includes.
