@@ -17,6 +17,8 @@
 	pup = "!git pull && git submodule init && git submodule update && git submodule status"
 	pullall = "submodule foreach git pull origin master"
 	churn = "!~/dot-files/tools/git-churn.sh"
+	assume = "update-index --assume-unchanged"
+	unassume = "update-index --no-assume-unchanged"
 [log]
 	date = local
 [help]
