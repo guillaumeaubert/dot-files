@@ -1,2 +1,10 @@
+-- Report the time spent on each query.
 \timing
-\set PROMPT1 '%m%R%x%# '
+
+-- Change prompt:
+--   %[...]% changes it to bold black
+--   %m is the host name
+--   %/ is the database name
+--   %# is >, unless you're a superuser (#)
+--   %R is =, unless in single-line mode (^) or disconnected (!)
+\set PROMPT1 '%[%m:%/%#%R]% '
