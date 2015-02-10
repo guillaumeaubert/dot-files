@@ -18,7 +18,8 @@ if [ "$dotfiles_update" != "Current branch master is up to date." ]; then
 	echo $hline;
 	echo $dotfiles_update;
 fi
-$(git submodule update 2>&1)
+git submodule init >/dev/null
+git submodule update >/dev/null
 cd ~
 
 # Load includes.
