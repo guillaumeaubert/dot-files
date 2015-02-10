@@ -27,7 +27,7 @@ alias s="sudo -E"
 alias cloc="perl $HOME/dot-files/tools/cloc-1.60.pl --read-lang-def=$HOME/dot-files/tools/cloc_definitions.txt"
 
 # Alias to inspect memory use.
-alias ps_mem="sudo python $HOME/dot-files/tools/ps_mem/ps_mem.py"
+alias mem="sudo python $HOME/dot-files/tools/ps_mem/ps_mem.py"
 
 # Alias for ansible-playbook.
 alias ap="ansible-playbook --vault-password-file ~/.vault_password -vv"
