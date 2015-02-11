@@ -1,2 +1,11 @@
 # Start screens as login shells, which sets up aliases correctly.
 screen bash -l
+
+# Set a large scrollback buffer.
+defscrollback 100000
+
+# Always start with utf8 enabled.
+defutf8 on
+
+# Disable the startup message.
+startup_message off
