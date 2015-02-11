@@ -33,6 +33,6 @@ source ~/dot-files/bash_includes/extra.sh
 source ~/dot-files/bash_includes/motd.sh
 
 # Load proprietary bash instructions.
-if [ -f ~/.bash.proprietary ]; then
-	source ~/.bash.proprietary
+if [ -f ~/.bash_proprietary ]; then
+	source ~/.bash_proprietary
 fi
