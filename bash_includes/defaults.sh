@@ -20,3 +20,6 @@ export HISTFILESIZE=5000000
 
 # Don't use cowsay for ansible, to keep the logs shorter.
 export ANSIBLE_NOCOWS=1
+
+# Don't clear the screen after quitting a man page.
+export MANPAGER='less -X';
