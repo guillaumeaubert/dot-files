@@ -1,12 +1,15 @@
+# Add /usr/games to the path for Debian to find cowsay and fortune.
+PATH=$PATH:/usr/games
+
 # Message of the day.
 echo $hline
 uptime
 echo $hline
-if [ -x /usr/games/fortune ]
+if command -v fortune >/dev/null
 then
-	if [ -x /usr/games/cowsay ]
+	if command -v cowsay >/dev/null
 	then
-		/usr/games/fortune | /usr/games/cowsay
+		fortune | cowsay
 		echo ''
 	else
 		echo ''
