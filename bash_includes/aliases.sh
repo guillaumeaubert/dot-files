@@ -53,3 +53,6 @@ alias ll='tree --dirsfirst -ChFupDaLg 1'
 
 # Reload the shell.
 alias reload="exec $SHELL -l"
+
+# Display space in a human-readable format by default.
+alias df="df -h"
