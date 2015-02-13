@@ -25,3 +25,6 @@
 [submodule "vim/bundle/tabular"]
 	path = vim/bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
+[submodule "vim/plugin/puppet"]
+	path = vim/plugin/puppet
+	url = https://github.com/rodjek/vim-puppet.git
