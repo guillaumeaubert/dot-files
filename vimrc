@@ -110,3 +110,6 @@ let g:localvimrc_whitelist='/home/guillaume/trunk/.*'
 
 " "Commentary" plugin - add support for new file types.
 autocmd FileType perl set commentstring=#\ %s
+
+" Associate .md with markdown.
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
