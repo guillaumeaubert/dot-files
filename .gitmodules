@@ -19,3 +19,6 @@
 [submodule "tools/ps_mem"]
 	path = tools/ps_mem
 	url = https://github.com/pixelb/ps_mem.git
+[submodule "vim/bundle/html5.vim"]
+	path = vim/bundle/html5.vim
+	url = https://github.com/othree/html5.vim.git
