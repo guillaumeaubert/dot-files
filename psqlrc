@@ -3,8 +3,27 @@
 
 -- Change prompt:
 --   %[...]% changes it to bold black
+--   %[%033[35m%]...%[%033[0m%] changes it to magenta
+--   %[%033[32m%]...%[%033[0m%] changes it to green
+--   %n is the user name
 --   %m is the host name
 --   %/ is the database name
+--   %R shows what input is expected
 --   %# is >, unless you're a superuser (#)
---   %R is =, unless in single-line mode (^) or disconnected (!)
-\set PROMPT1 '%[%m:%/%#%R]% '
+\set PROMPT1 '%[%033[35m%]%n@%m%[%033[0m%] %[%033[32m%]%/%[%033[0m%]%[%R%#%] '
+\set PROMPT2 '%R> '
+
+-- Store one history file per database.
+\set HISTFILE ~/.psql_history- :DBNAME
+
+-- Ignore duplicates.
+\set HISTCONTROL ignoredups
+
+-- Use uppercase for tab-completion of keywords.
+\set COMP_KEYWORD_CASE upper
+
+-- Remove welcome message.
+\set QUIET 1
+
+-- Make null values more visible and prevent confusion.
+\pset null '[NULL]'
