@@ -28,3 +28,6 @@
 [submodule "vim/plugin/puppet"]
 	path = vim/plugin/puppet
 	url = https://github.com/rodjek/vim-puppet.git
+[submodule "vim/plugin/commentary"]
+	path = vim/plugin/commentary
+	url = https://github.com/tpope/vim-commentary

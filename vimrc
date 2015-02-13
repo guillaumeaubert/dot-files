@@ -107,3 +107,6 @@ vnoremap d "0d
 
 " Allow silent local vimrc overrides for safe projects.
 let g:localvimrc_whitelist='/home/guillaume/trunk/.*'
+
+" "Commentary" plugin - add support for new file types.
+autocmd FileType perl set commentstring=#\ %s
