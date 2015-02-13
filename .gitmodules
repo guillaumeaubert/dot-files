@@ -31,3 +31,6 @@
 [submodule "vim/plugin/commentary"]
 	path = vim/plugin/commentary
 	url = https://github.com/tpope/vim-commentary
+[submodule "vim/bundle/javascript-syntax"]
+	path = vim/bundle/javascript-syntax
+	url = https://github.com/jelera/vim-javascript-syntax.git
