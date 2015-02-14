@@ -56,3 +56,6 @@ alias reload="exec $SHELL -l"
 
 # Display space in a human-readable format by default.
 alias df="df -h"
+
+# Create directories recursively by default.
+alias mkdir='mkdir -pv'
