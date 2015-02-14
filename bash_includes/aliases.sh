@@ -62,3 +62,7 @@ alias mkdir='mkdir -pv'
 
 # Test CPU.
 alias testcpu="sysbench --test=cpu --cpu-max-prime=20000 run"
+
+# Sometimes VirtualBox doesn't auto-start properly and needs to be set up
+# again.
+alias kickvbox="sudo /etc/init.d/vboxdrv setup && sudo /etc/init.d/vboxweb-service restart"
