@@ -59,3 +59,6 @@ alias df="df -h"
 
 # Create directories recursively by default.
 alias mkdir='mkdir -pv'
+
+# Test CPU.
+alias testcpu="sysbench --test=cpu --cpu-max-prime=20000 run"
