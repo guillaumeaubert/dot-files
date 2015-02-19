@@ -36,7 +36,7 @@ alias ap="ansible-playbook --vault-password-file ~/.vault_password -vv"
 alias errlog'=sudo find /var/local/www_logs/ -type f \( -name "*error.log" \) -exec tail -f /var/log/syslog /var/log/apache2/error.log  "$file" {} +'
 
 # Follow syslog.
-alias syslog='less +F /var/log/syslog'
+alias syslog='sudo less +F /var/log/syslog'
 
 # Use colors for grep.
 alias grep='grep --color=auto'
