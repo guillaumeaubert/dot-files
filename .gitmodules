@@ -10,9 +10,6 @@
 [submodule "vim/bundle/yaml"]
 	path = vim/bundle/yaml
 	url = https://github.com/ingydotnet/yaml-vim.git
-[submodule "vim/bundle/localvimrc"]
-	path = vim/bundle/localvimrc
-	url = https://github.com/embear/vim-localvimrc.git
 [submodule "build"]
 	path = build
 	url = https://github.com/caarlos0/shell-travis-build.git
