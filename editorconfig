@@ -11,3 +11,8 @@ charset = utf-8
 [*.yml]
 indent_style = space
 indent_size = 2
+
+# Ruby files.
+[*.{erb,rb}]
+indent_style = space
+indent_size = 2
