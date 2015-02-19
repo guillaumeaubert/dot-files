@@ -69,3 +69,6 @@ alias kickvbox="sudo /etc/init.d/vboxdrv setup && sudo /etc/init.d/vboxweb-servi
 
 # Ruby-on-Rails shortcuts.
 alias migrate="rake db:migrate"
+
+# Quickly find a file in the current directory or below.
+alias ffind="find . -name"
