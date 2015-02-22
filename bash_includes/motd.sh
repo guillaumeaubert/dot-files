@@ -9,8 +9,9 @@ if command -v fortune >/dev/null
 then
 	if command -v cowsay >/dev/null
 	then
+		echo -e -n "\e[00;32m"
 		fortune | cowsay
-		echo ''
+		echo -e "\e[00m"
 	else
 		echo ''
 		fortune
