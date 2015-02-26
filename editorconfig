@@ -16,3 +16,8 @@ indent_size = 2
 [*.{erb,rb}]
 indent_style = space
 indent_size = 2
+
+# SQL files.
+[*.sql]
+indent_style = space
+indent_size = 2
