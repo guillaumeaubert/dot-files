@@ -20,3 +20,4 @@ ppi() {
 		PPI::Dumper->new( $ppi_document )->print();
 	'
 }
+export -f ppi
