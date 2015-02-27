@@ -21,3 +21,10 @@ ppi() {
 	'
 }
 export -f ppi
+
+# Allow going up several directories easily.
+up() {
+	cd $(eval printf '../'%.0s {1..$1})
+	pwd
+}
+export -f up
