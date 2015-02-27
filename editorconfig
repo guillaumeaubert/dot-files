@@ -21,3 +21,8 @@ indent_size = 2
 [*.sql]
 indent_style = space
 indent_size = 2
+
+# Puppet files.
+[*.pp]
+indent_style = space
+indent_size = 2
