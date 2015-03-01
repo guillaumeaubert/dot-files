@@ -113,3 +113,6 @@ autocmd FileType perl set commentstring=#\ %s
 
 " Associate .md with markdown.
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
+" Apache configuration files.
+au BufRead,BufNewFile /etc/apache2/**.conf set filetype=apache
