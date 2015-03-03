@@ -116,3 +116,6 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 " Apache configuration files.
 au BufRead,BufNewFile /etc/apache2/**.conf set filetype=apache
+
+" Mojolicious templates.
+au BufRead,BufNewFile *.html.ep set filetype=html
