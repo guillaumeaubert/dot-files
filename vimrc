@@ -4,10 +4,11 @@ runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
 
-" Treat .t files as Perl code.
+" Turn on syntax highlighting.
 syntax on
+
+" Enable filetype detection.
 filetype on
-au BufNewFile,BufRead *.t set filetype=perl
 
 " Disable automatic visual mode with the mouse.
 set mouse-=a
@@ -110,12 +111,3 @@ let g:localvimrc_whitelist='/home/guillaume/trunk/.*'
 
 " "Commentary" plugin - add support for new file types.
 autocmd FileType perl set commentstring=#\ %s
-
-" Associate .md with markdown.
-autocmd BufNewFile,BufReadPost *.md set filetype=markdown
-
-" Apache configuration files.
-au BufRead,BufNewFile /etc/apache2/**.conf set filetype=apache
-
-" Mojolicious templates.
-au BufRead,BufNewFile *.html.ep set filetype=html
