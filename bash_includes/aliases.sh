@@ -72,3 +72,7 @@ alias migrate="rake db:migrate"
 
 # Quickly find a file in the current directory or below.
 alias ffind="find . -name"
+
+# Exit the vim way.
+alias q='logout'
+alias :q='logout'
