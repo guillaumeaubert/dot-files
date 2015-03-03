@@ -111,3 +111,7 @@ let g:localvimrc_whitelist='/home/guillaume/trunk/.*'
 
 " "Commentary" plugin - add support for new file types.
 autocmd FileType perl set commentstring=#\ %s
+
+" Keep 3 lines at the top and bottom when scrolling, to give better context.
+set scrolloff=3
+set sidescrolloff=3
