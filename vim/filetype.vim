@@ -12,4 +12,7 @@ augroup filetypedetect
 	" Mojolicious templates.
 	autocmd BufNewFile,BufRead *.html.ep set filetype=html
 
+	" Changelog files.
+	autocmd BufNewFile,BufRead Changes set filetype=txt
+
 augroup END
