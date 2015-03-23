@@ -25,6 +25,7 @@
 
 [grep]
 	lineNumber = true
+	extendedRegexp = true
 
 [log]
 	date = local
