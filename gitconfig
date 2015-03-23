@@ -1,12 +1,15 @@
 [color]
 	diff = auto
 	ui = always
+
 [user]
 	name = Guillaume Aubert
 	email = aubertg@cpan.org
+
 [core]
 	editor = vim
 	pager = less -F -X
+
 [alias]
 	graph = log --graph --pretty=format:'%C(green)%h%Creset - %C(bold blue)%an%Creset - %C(yellow)%d%Creset %s %C(white)(%cr)%Creset'
 	changes = diff --name-status -r
@@ -19,11 +22,15 @@
 	churn = "!~/dot-files/tools/git-churn.sh"
 	assume = "update-index --assume-unchanged"
 	unassume = "update-index --no-assume-unchanged"
+
 [log]
 	date = local
+
 [help]
 	autocorrect = 1
+
 [diff]
 	algorithm = patience
+
 [color "diff"]
 	whitespace = red reverse
