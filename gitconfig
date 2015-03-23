@@ -23,6 +23,9 @@
 	assume = "update-index --assume-unchanged"
 	unassume = "update-index --no-assume-unchanged"
 
+[grep]
+	lineNumber = true
+
 [log]
 	date = local
 
