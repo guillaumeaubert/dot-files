@@ -12,3 +12,6 @@ shopt -s autocd 2> /dev/null
 
 # Recursive globbing - ls **/*.txt (bash 4 only).
 shopt -s globstar 2> /dev/null
+
+# Hostname completion when a word containing @ is being completed.
+shopt -s hostcomplete
