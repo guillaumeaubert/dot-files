@@ -15,3 +15,6 @@ shopt -s globstar 2> /dev/null
 
 # Hostname completion when a word containing @ is being completed.
 shopt -s hostcomplete
+
+# Do not attempt completion on empty lines.
+shopt -s no_empty_cmd_completion
