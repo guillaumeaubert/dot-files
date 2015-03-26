@@ -37,3 +37,11 @@ branch ()
 	git branch --set-upstream-to=origin/$1 $1
 }
 export -f branch
+
+# Shortcut to create and sync new git tags.
+tag()
+{
+	git tag $1
+	git push origin $1
+}
+export -f tag
