@@ -1,6 +1,9 @@
 # Alias to rebuild my CPAN distributions.
 alias distb="perl Build.PL && ./Build && ./Build disttest && ./Build distclean"
 
+# Alias to create an archive of a distribution for CPAN.
+alias distarchive="perl $HOME/dot-files/tools/distarchive.pl"
+
 # Alias to upload my CPAN distributions to PAUSE.
 alias distupload='cpan-upload --user AUBERTG --verbose'
 
