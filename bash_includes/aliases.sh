@@ -1,6 +1,9 @@
 # Alias to rebuild my CPAN distributions.
 alias distb="perl Build.PL && ./Build && ./Build disttest && ./Build distclean"
 
+# Alias to update the version of a distribution inside a git repository.
+alias distver="perl $HOME/dot-files/tools/update_cpan_dist_version.pl"
+
 # Alias to create an archive of a distribution for CPAN.
 alias distarchive="perl $HOME/dot-files/tools/create_cpan_archive.pl"
 
