@@ -10,6 +10,11 @@ alias distarchive="perl $HOME/dot-files/tools/create_cpan_archive.pl"
 # Alias to upload my CPAN distributions to PAUSE.
 alias distupload='cpan-upload --user AUBERTG --verbose'
 
+# Alias to determine prereqs for a Perl distribution.
+# This is particularly useful for new distributions, in order to populate the
+# lists of prereqs in Build.PL.
+alias distprereq="perl $HOME/dot-files/tools/list_distribution_prereqs.pl"
+
 # Git author statistics.
 alias gastats='git ls-files -z | xargs -0n1 git blame -w | perl -n -e '"'"'/^.*?\((.*?)\s+[\d]{4}/; print ">$1<\n"'"'"' | sort -f | uniq -c | sort -n'
 
