@@ -23,6 +23,9 @@ alias distver="perl $HOME/dot-files/tools/update_cpan_dist_version.pl"
 alias distarchive="perl $HOME/dot-files/tools/create_cpan_archive.pl"
 
 # Alias to upload my CPAN distributions to PAUSE.
+# Note: don't forget to create ~/.pause with the following format.
+#    user <username>
+#    password <PAUSE password>
 alias distupload='cpan-upload --user AUBERTG --verbose'
 
 # Alias to determine prereqs for a Perl distribution.
