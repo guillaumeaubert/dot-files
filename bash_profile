@@ -26,6 +26,7 @@ cd ~
 source ~/dot-files/bash_includes/shopt.sh
 source ~/dot-files/bash_includes/defaults.sh
 source ~/dot-files/bash_includes/aliases.sh
+source ~/dot-files/bash_includes/cpan_author.sh
 source ~/dot-files/bash_includes/functions.sh
 source ~/dot-files/bash_includes/git-completion.sh
 source ~/dot-files/bash_includes/prompt.sh
