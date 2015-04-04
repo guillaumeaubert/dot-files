@@ -1,3 +1,12 @@
+# Note: a lot of this assumes that you have:
+#
+#   - a ~/cpan/ directory under which you've cloned the git repositories of
+#     your distributions.
+#
+#   - a ~/cpan_archive/ directory where you store the distribution archives
+#     that are going to be uploaded to PAUSE.
+
+
 # Add lib/ to 'prove' and make it recursive by default.
 alias prove='prove -I lib -r'
 
