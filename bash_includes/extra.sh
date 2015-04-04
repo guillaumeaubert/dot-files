@@ -7,3 +7,8 @@ fi
 if [ -e ~/perl5/bin/cpanm ]; then
 	eval $(perl -I ~/perl5/lib/perl5/ -Mlocal::lib)
 fi
+
+# Enable local executables installed by Perl distributions.
+if [ -d "$HOME/perl5/bin" ]; then
+	PATH="$HOME/perl5/bin:$PATH"
+fi
