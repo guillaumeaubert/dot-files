@@ -40,7 +40,7 @@ all_dists()
 	original_dir=$(pwd)
 
 	# The command to run on each distribution.
-	command=$1
+	command=$@
 
 	# Retrieve all the directories under ~/cpan/.
 	dists_found=0
