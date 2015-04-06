@@ -47,7 +47,7 @@ all_dists()
 	# Retrieve all the directories under ~/cpan/.
 	dists_found=0
 	for dist in ~/cpan/*/; do
-		cd $dist
+		cd "$dist"
 
 		# Skip directories that are not a git repository.
 		if [ ! -d .git ]; then
@@ -58,12 +58,12 @@ all_dists()
 		# Run the command on the distribution's repository;
 		echo -e "\e[4;35m$dist\e[0m"
 		export DIST=$dist
-		eval $command
+		eval "$command"
 		echo ""
 	done
 
 	# Restore the original directory.
-	cd $original_dir
+	cd "$original_dir"
 
 	# Print how many distributions were affected.
 	echo -e "\e[0;92m✔ $dists_found distributions visited.\e[0m"
