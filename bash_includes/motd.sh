@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Add /usr/games to the path for Debian to find cowsay and fortune.
 PATH=$PATH:/usr/games
 

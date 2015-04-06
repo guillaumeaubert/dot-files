@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Load in the git branch prompt script.
 source ~/dot-files/bash_includes/git-prompt.sh
 

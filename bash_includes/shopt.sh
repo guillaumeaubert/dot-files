@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Enable appending to the history file instead of replacing it (histappend) and
 # attempt to save correctly all the lines of a multiple lines command
 # (cmdhist).

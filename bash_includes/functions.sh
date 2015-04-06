@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Find out the version of an installed Perl module.
 pmver ()
 {

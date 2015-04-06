@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Tweak the behavior of less:
 #     - support colors (-R);
 #     - set tabs to 2 spaces (-x2);

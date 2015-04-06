@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Note: a lot of this assumes that you have:
 #
 #   - a ~/cpan/ directory under which you've cloned the git repositories of

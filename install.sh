@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # List of files which are part of the repository but should not be symlinked.
 IGNORED_FILES='
