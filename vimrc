@@ -81,6 +81,8 @@ endtry
 
 " Add git diff information in the left gutter.
 let g:gitgutter_eager = 0
+let g:gitgutter_override_sign_column_highlight = 0
+highlight SignColumn ctermbg=grey
 highlight GitGutterAdd ctermbg=grey ctermfg=black
 highlight GitGutterChange ctermbg=grey ctermfg=black
 highlight GitGutterDelete ctermbg=grey ctermfg=black
