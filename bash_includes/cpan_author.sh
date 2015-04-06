@@ -53,7 +53,7 @@ all_dists()
 		if [ ! -d .git ]; then
 			continue
 		fi
-		dists_found=$(($dists_found+1))
+		let "dists_found++"
 
 		# Run the command on the distribution's repository;
 		echo -e "\e[4;35m$dist\e[0m"
