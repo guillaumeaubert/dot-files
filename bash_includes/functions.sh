@@ -54,7 +54,9 @@ loop_curl()
 	while [ 1 ]
 	do
 		echo -n '... '
-		curl -sL --max-time 10  -w "code=%{http_code} time=%{time_total}s redir=%{num_redirects} dest=%{url_effective}\\n" "$1" -o /dev/null
+		curl -sL --max-time 10  -w "code=%{http_code} time=%{time_total}s redir=%{num_redirects} dest=%{url_effective} (" "$1" -o /dev/null
+		echo -n $?
+		echo ')'
 		sleep 1
 	done
 }
