@@ -47,3 +47,15 @@ tag()
 	git push origin $1
 }
 export -f tag
+
+# Test the response of a page over time.
+loop_curl()
+{
+	while [ 1 ]
+	do
+		echo -n '... '
+		curl -sL --max-time 10  -w "code=%{http_code} time=%{time_total}s redir=%{num_redirects} dest=%{url_effective}\\n" "$1" -o /dev/null
+		sleep 1
+	done
+}
+export -f loop_curl
