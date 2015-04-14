@@ -44,8 +44,11 @@ branch()
 export -f branch
 
 # Shortcut to create and sync new git tags.
+# Note: push first, to make sure that the commits the tag points to exists on
+# the remote.
 tag()
 {
+	git push && \
 	git tag $1 && \
 	git push origin $1
 }
