@@ -37,8 +37,8 @@ export -f up
 # Shortcut to create and sync new git branches.
 branch()
 {
-	git checkout -b $1
-	git push origin $1
+	git checkout -b $1 && \
+	git push origin $1 && \
 	git branch --set-upstream-to=origin/$1 $1
 }
 export -f branch
@@ -46,7 +46,7 @@ export -f branch
 # Shortcut to create and sync new git tags.
 tag()
 {
-	git tag $1
+	git tag $1 && \
 	git push origin $1
 }
 export -f tag
