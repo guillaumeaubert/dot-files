@@ -67,3 +67,11 @@ loop_curl()
 	done
 }
 export -f loop_curl
+
+# Make a directory and open it.
+mkcd()
+{
+	mkdir -p "$1" && \
+	cd "$1"
+}
+export -f mkcd
