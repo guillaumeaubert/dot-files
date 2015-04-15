@@ -48,7 +48,7 @@ alias reload="exec $SHELL -l"
 alias df="df -h"
 
 # Create directories recursively by default.
-alias mkdir='mkdir -pv'
+alias mkdir='mkdir -p'
 
 # Test CPU.
 alias testcpu="sysbench --test=cpu --cpu-max-prime=20000 run"
