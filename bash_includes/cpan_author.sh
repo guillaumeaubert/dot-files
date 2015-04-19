@@ -56,7 +56,7 @@ all_dists()
 		let "dists_found++"
 
 		# Run the command on the distribution's repository;
-		echo -e "\e[4;35m$dist\e[0m"
+		echo -e "\e[4;35m($dists_found) $dist\e[0m"
 		export DIST=$dist
 		eval "$command"
 		echo ""
