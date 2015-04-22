@@ -75,3 +75,19 @@ mkcd()
 	cd "$1"
 }
 export -f mkcd
+
+# Make an alias to get quickly to the main code directory on the current
+# machine.
+c()
+{
+	if [ -e ~/cpan ]
+	then
+		cd ~/cpan
+	elif [ -e ~/trunk ]
+	then
+		cd ~/trunk
+	else
+		echo "No code directory found on this machine!"
+	fi
+}
+export -f c
