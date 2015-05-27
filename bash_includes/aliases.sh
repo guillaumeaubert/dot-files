@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Git author statistics.
-alias gastats='git ls-files -z | xargs -0n1 git blame -w | perl -n -e '"'"'/^.*?\((.*?)\s+[\d]{4}/; print ">$1<\n"'"'"' | sort -f | uniq -c | sort -n'
+alias gastats='git ls-files -z | xargs -0n1 git blame -w | perl -n -e '"'"'/^.*?\((?<author>.*?)\s+[\d]{4}/; print ">\g{author}<\n"'"'"' | sort -f | uniq -c | sort -n'
 
 # Alias vim, since I use it all the time.
 alias v='vim'
