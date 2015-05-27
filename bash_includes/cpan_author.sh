@@ -16,13 +16,13 @@ alias prove='prove -I lib -r'
 alias t='perl -I lib -T'
 
 # Alias to rebuild my CPAN distributions.
-alias distb="perl Build.PL && ./Build && ./Build disttest && ./Build distclean"
+alias distb='perl Build.PL && ./Build && ./Build disttest && ./Build distclean'
 
 # Alias to update the version of a distribution inside a git repository.
-alias distver="perl $HOME/dot-files/tools/update_cpan_dist_version.pl"
+alias distver='perl $HOME/dot-files/tools/update_cpan_dist_version.pl'
 
 # Alias to create an archive of a distribution for CPAN.
-alias distarchive="perl $HOME/dot-files/tools/create_cpan_archive.pl"
+alias distarchive='perl $HOME/dot-files/tools/create_cpan_archive.pl'
 
 # Alias to upload my CPAN distributions to PAUSE.
 # Note: don't forget to create ~/.pause with the following format.
@@ -33,7 +33,7 @@ alias distupload='cpan-upload --user AUBERTG --verbose'
 # Alias to determine prereqs for a Perl distribution.
 # This is particularly useful for new distributions, in order to populate the
 # lists of prereqs in Build.PL.
-alias distprereq="perl $HOME/dot-files/tools/list_distribution_prereqs.pl"
+alias distprereq='perl $HOME/dot-files/tools/list_distribution_prereqs.pl'
 
 # Function to run commands on all the distributions found under ~/cpan/.
 all_dists()
