@@ -91,3 +91,9 @@ c()
 	fi
 }
 export -f c
+
+# Create Linux user passwords.
+linuxpass()
+{
+	echo -n $1 | makepasswd --crypt-md5 --clearfrom -
+}

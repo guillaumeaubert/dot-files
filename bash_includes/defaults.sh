@@ -14,7 +14,7 @@ fi
 export LANG=en_US.UTF-8
 
 # Filter out noise from the command history.
-export HISTIGNORE="&:ls:exit:^[ \t]*"
+export HISTIGNORE="&:ls:exit:^[ \t]*:linuxpass *"
 
 # Increase how much the command history should store.
 export HISTSIZE=500000
