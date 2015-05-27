@@ -6,7 +6,7 @@
 export LESS='-R -x2'
 
 # Set the correct time zone.
-if [ $(whoami) != 'root' ]; then
+if [ "$(whoami)" != 'root' ]; then
 	export TZ="/usr/share/zoneinfo/America/Los_Angeles"
 fi
 
