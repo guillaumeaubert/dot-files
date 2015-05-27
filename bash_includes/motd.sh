@@ -4,9 +4,9 @@
 PATH=$PATH:/usr/games
 
 # Message of the day.
-echo $HLINE
+echo "$HLINE"
 uptime
-echo $HLINE
+echo "$HLINE"
 if command -v fortune >/dev/null
 then
 	if command -v cowsay >/dev/null
@@ -17,6 +17,6 @@ then
 	else
 		echo ''
 		fortune
-		echo $HLINE
+		echo "$HLINE"
 	fi
 fi

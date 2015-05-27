@@ -4,9 +4,9 @@
 cd ~/dot-files
 dotfiles_push=$(git push 2>&1)
 if [ "$dotfiles_push" != "Everything up-to-date" ] && [ "$dotfiles_update" != "" ]; then
-	echo $HLINE;
+	echo "$HLINE";
 	echo $dotfiles_update;
-	echo $HLINE;
+	echo "$HLINE";
 fi
 cd ~
 

@@ -15,7 +15,7 @@ HLINE=$(printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | sed -e 's/ /─/g')
 cd ~/dot-files/
 dotfiles_update=$(git pull --quiet --rebase 2>&1)
 if [ "$dotfiles_update" != "Current branch master is up to date." ] && [ "$dotfiles_update" != "" ]; then
-	echo $HLINE;
+	echo "$HLINE";
 	echo $dotfiles_update;
 fi
 git submodule init >/dev/null
