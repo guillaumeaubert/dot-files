@@ -9,13 +9,13 @@ if [ -d ~/bin ] ; then
 fi
 
 # Define a horizontal line.
-hline=$(printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | sed -e 's/ /─/g')
+HLINE=$(printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | sed -e 's/ /─/g')
 
 # Do a git pull to bring in the latest updates before sourcing the includes.
 cd ~/dot-files/
 dotfiles_update=$(git pull --quiet --rebase 2>&1)
 if [ "$dotfiles_update" != "Current branch master is up to date." ] && [ "$dotfiles_update" != "" ]; then
-	echo $hline;
+	echo $HLINE;
 	echo $dotfiles_update;
 fi
 git submodule init >/dev/null
