@@ -57,7 +57,7 @@ export -f tag
 # Test the response of a page over time.
 loop_curl()
 {
-	while [ 1 ]
+	while true
 	do
 		echo -n '... '
 		curl -sL --max-time 10  -w "code=%{http_code} time=%{time_total}s redir=%{num_redirects} dest=%{url_effective} (" "$1" -o /dev/null
