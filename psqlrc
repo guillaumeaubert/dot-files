@@ -27,3 +27,6 @@
 
 -- Make null values more visible and prevent confusion.
 \pset null '[NULL]'
+
+-- Display row counts on for SELECTs and UPDATES.
+\pset footer on
