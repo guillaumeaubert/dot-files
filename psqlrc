@@ -1,3 +1,6 @@
+-- Don't need any output for the meta-commands we execute here.
+\set QUIET 1
+
 -- Report the time spent on each query.
 \timing
 
@@ -30,3 +33,6 @@
 
 -- Display row counts on for SELECTs and UPDATES.
 \pset footer on
+
+-- Restore output for meta-commands.
+\unset QUIET
