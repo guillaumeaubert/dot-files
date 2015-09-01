@@ -34,5 +34,8 @@
 -- Display row counts on for SELECTs and UPDATES.
 \pset footer on
 
+-- Use Unicode box-drawing characters to create tables.
+\pset linestyle unicode
+
 -- Restore output for meta-commands.
 \unset QUIET
