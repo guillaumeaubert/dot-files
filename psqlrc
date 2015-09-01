@@ -37,5 +37,8 @@
 -- Use Unicode box-drawing characters to create tables.
 \pset linestyle unicode
 
+-- Make all table cells fully enclosed by borders.
+\pset border 2
+
 -- Restore output for meta-commands.
 \unset QUIET
