@@ -111,6 +111,14 @@ Here is the list of the various dot files I use:
 	ln -s dot-files/editorconfig .editorconfig
 	```
 
+ * **.githooksrc:** defaults for [App::GitHooks](https://metacpan.org/release/App-GitHooks).
+
+	```
+	cd ~
+	mv .githooksrc .githooksrc.original
+	ln -s dot-files/githooksrc .githooksrc
+	```
+
 
 License
 -------
