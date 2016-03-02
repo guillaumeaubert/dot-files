@@ -37,3 +37,8 @@ source ~/dot-files/bash_includes/motd.sh
 if [ -f ~/.bash_proprietary ]; then
 	source ~/.bash_proprietary
 fi
+
+#Load RVM into a shell session as a function (if RVM exists).
+if [ -s ~/.rvm/scripts/rvm ]; then
+	source ~/.rvm/scripts/rvm
+fi
