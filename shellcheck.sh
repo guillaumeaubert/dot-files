@@ -10,6 +10,9 @@ shellcheck_skip="
 	./vim/undo/*
 "
 
+# Linting errors to ignore.
+export SHELLCHECK_OPTS="-e SC2164"
+
 # Define find_cmd() to exclude files from $shellcheck_skip.
 find_cmd() {
 	cmd="find . -type f -and \( -perm +111 -or -name '*.sh' \) $(find_prunes)"
