@@ -1,6 +1,6 @@
 language: bash
-before_install:
-  - sudo apt-get -qq update
-  - sudo apt-get install -y shellcheck
+install:
+  - ./build/install.sh
 script:
-  - ./shellcheck.sh
+  - ./build/shellcheck.sh
+sudo: required
