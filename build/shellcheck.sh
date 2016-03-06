@@ -22,7 +22,7 @@ export SHELLCHECK_OPTS="-e SC2164"
 ### FUNCTIONS
 
 success() {
-  printf "\r  [ \033[00;32mOK\033[0m ] Linting %s...\n" "$1"
+  printf "\r  [ \033[00;32mPASS\033[0m ] Linting %s...\n" "$1"
 }
 
 fail() {
@@ -31,7 +31,7 @@ fail() {
 }
 
 info() {
-  printf "\r  [ \033[00;34m??\033[0m ] %s\n" "$1"
+  printf "\r  [ \033[00;34mINFO\033[0m ] %s\n" "$1"
 }
 
 check() {
