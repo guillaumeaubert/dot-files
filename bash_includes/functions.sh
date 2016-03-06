@@ -29,7 +29,7 @@ export -f ppi
 # Allow going up several directories easily.
 up()
 {
-	# shellcheck disable=SC2046,SC1083,SC1083
+	# shellcheck disable=SC2046,SC1083,SC1083,SC2059,SC2051
 	cd $(eval printf '../'%.0s {1.."$1"})
 	pwd
 }
