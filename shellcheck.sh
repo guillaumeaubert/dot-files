@@ -4,26 +4,27 @@ set -eo pipefail
 
 # Paths to ignore.
 shellcheck_skip="
-	./tools/git-churn.sh
-	./bash_includes/git-completion.sh
-	./bash_includes/git-prompt.sh
-	./vim/undo/*
+	tools/git-churn.sh
+	bash_includes/git-completion.sh
+	bash_includes/git-prompt.sh
+	vim/undo/
 "
 
 # Linting errors to ignore.
 export SHELLCHECK_OPTS="-e SC2164"
 
-# Define find_cmd() to exclude files from $shellcheck_skip.
-find_cmd() {
-	cmd="find . -type f -and \( -perm +111 -or -name '*.sh' \) $(find_prunes)"
+# Define find_scripts() to exclude files from $shellcheck_skip.
+find_scripts() {
+	cmd="git ls-tree -r HEAD | egrep '^1007|.*\..*sh$' | awk '{print \$4}'"
 	for path in $shellcheck_skip; do
-		cmd="$cmd ! -path '$path'"
+		echo $path
+		cmd="$cmd | grep -v '^$path'"
 	done
 	echo "$cmd"
 }
 
-# Protect find_cmd() to prevent ./build/build.sh from redefining it.
-readonly -f find_cmd
+# Protect find_scripts() to prevent ./build/build.sh from redefining it.
+readonly -f find_scripts
 
 # Run the linter.
 source ./build/build.sh
