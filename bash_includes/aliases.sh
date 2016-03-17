@@ -57,6 +57,9 @@ alias testcpu='sysbench --test=cpu --cpu-max-prime=20000 run'
 # again.
 alias kickvbox='sudo /etc/init.d/vboxdrv setup && sudo /etc/init.d/vboxweb-service restart'
 
+# Always display cop names when issues are detected by Rubocop.
+alias rubocop='rubocop --display-cop-names'
+
 # Ruby-on-Rails shortcuts.
 alias migrate='rake db:migrate'
 
