@@ -15,3 +15,6 @@ fi
 if [ -d "$HOME/perl5/bin" ]; then
 	PATH="$HOME/perl5/bin:$PATH"
 fi
+
+# Set up Go environment.
+export GOPATH=$HOME/golang
