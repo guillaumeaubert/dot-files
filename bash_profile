@@ -29,6 +29,7 @@ source ~/dot-files/bash_includes/aliases.sh
 source ~/dot-files/bash_includes/cpan_author.sh
 source ~/dot-files/bash_includes/functions.sh
 source ~/dot-files/bash_includes/git-completion.sh
+source ~/dot-files/bash_includes/golang.sh
 source ~/dot-files/bash_includes/prompt.sh
 source ~/dot-files/bash_includes/extra.sh
 source ~/dot-files/bash_includes/motd.sh
