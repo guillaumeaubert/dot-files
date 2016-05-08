@@ -31,15 +31,11 @@ source ~/dot-files/bash_includes/functions.sh
 source ~/dot-files/bash_includes/git-completion.sh
 source ~/dot-files/bash_includes/golang.sh
 source ~/dot-files/bash_includes/prompt.sh
+source ~/dot-files/bash_includes/ruby.sh
 source ~/dot-files/bash_includes/extra.sh
 source ~/dot-files/bash_includes/motd.sh
 
 # Load proprietary bash instructions.
 if [ -f ~/.bash_proprietary ]; then
 	source ~/.bash_proprietary
-fi
-
-#Load RVM into a shell session as a function (if RVM exists).
-if [ -s ~/.rvm/scripts/rvm ]; then
-	source ~/.rvm/scripts/rvm
 fi
