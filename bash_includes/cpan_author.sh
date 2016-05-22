@@ -70,3 +70,55 @@ all_dists()
 	echo -e "\e[0;92m✔ $dists_found distributions visited.\e[0m"
 }
 export -f all_dists
+
+# Function to release a CPAN module.
+distrelease()
+{
+	# Make sure we're at the root of the distribution.
+	if [ ! -d .git ]; then
+		echo "You must be at the root of the distribution"
+		return
+	fi
+
+	# Find the name of the distribution. I name the root directory the same as
+	# the distribution, so that's an easy shortcut. Long term, this should be
+	# extracted from one of the meta files in the repository.
+	dist_name=${PWD##*/}
+
+	# Find the version number of the release.
+	dist_version=$1
+	if [ "$dist_version" == "" ]; then
+		echo "You must pass a version number"
+		return
+	fi
+	semver_pattern="^v[0-9]+\.[0-9]+\.[0-9]+$"
+	if [[ ! ( "$dist_version" =~ $semver_pattern ) ]]; then
+		echo "You must pass a version number that follows semantic versioning (vN.N.N)"
+		return
+	fi
+
+	# Ensure that the distribution builds cleanly and that tests pass.
+	distb && \
+
+	# Commit the changelog and version bump info.
+	git commit -a -m "Release version $dist_version." && \
+	git tag "$dist_version" && \
+	git push origin "$dist_version" && \
+
+	# Upload the release to PAUSE.
+	distarchive && \
+	cd ~/cpan_archives && \
+	distupload "${dist_name}/${dist_name}-${dist_version}.tar.gz" && \
+
+	# Add the release bundle to the archive repository, so that older releases
+	# can be deleted from the PAUSE server.
+	git add "${dist_name}/${dist_name}-${dist_version}.tar.gz" && \
+	git commit -m "Add ${dist_name} ${dist_version}." && \
+	git push && \
+
+	# Go back to the original directory.
+	cd "$HOME/cpan/$dist_name" && \
+
+	echo -e "\e[0;92m✔ $dist_version release complete.\e[0m"
+}
+export -f distrelease
