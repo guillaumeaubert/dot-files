@@ -7,7 +7,7 @@ augroup filetypedetect
 	autocmd BufNewFile,BufRead *.md set filetype=markdown
 
 	" Apache configuration files.
-	autocmd BufNewFile,BufRead /etc/apache2/**.conf set filetype=apache
+	autocmd BufNewFile,BufRead */apache2/**.conf set filetype=apache
 
 	" Mojolicious templates.
 	autocmd BufNewFile,BufRead *.html.ep set filetype=html
