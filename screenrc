@@ -12,3 +12,9 @@ startup_message off
 
 # Disable visual bell.
 vbell off
+
+# Go back to previous window with ctrl-left.
+bindkey ^[[1;5D prev
+
+# Go to the next window with ctrl-right.
+bindkey ^[[1;5C next
