@@ -9,3 +9,6 @@ defutf8 on
 
 # Disable the startup message.
 startup_message off
+
+# Disable visual bell.
+vbell off
