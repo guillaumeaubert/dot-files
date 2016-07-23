@@ -22,3 +22,6 @@ bindkey ^[[1;5C next
 # Add status bar at the bottom of the screen.
 hardstatus alwayslastline
 hardstatus string '%{= kG}%-Lw%{= kW}%50> %n%f* %t%{= kG}%+Lw%<'
+
+# Start each new window with a login shell.
+shell -$SHELL
