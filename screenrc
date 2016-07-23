@@ -25,3 +25,16 @@ hardstatus string '%{= kG}%-Lw%{= kW}%50> %n%f* %t%{= kG}%+Lw%<'
 
 # Start each new window with a login shell.
 shell -$SHELL
+
+# If a window goes unresponsive, don't block the whole session waiting for it.
+nonblock on
+
+# Detach on hangup.
+autodetach on
+
+# Set the altscreen so that when you quit vim, it will go back to what it was
+# before.
+altscreen on
+
+# Unbind freeze terminal command.
+bind s
