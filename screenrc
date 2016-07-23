@@ -18,3 +18,7 @@ bindkey ^[[1;5D prev
 
 # Go to the next window with ctrl-right.
 bindkey ^[[1;5C next
+
+# Add status bar at the bottom of the screen.
+hardstatus alwayslastline
+hardstatus string '%{= kG}%-Lw%{= kW}%50> %n%f* %t%{= kG}%+Lw%<'
