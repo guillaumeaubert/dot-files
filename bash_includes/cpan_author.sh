@@ -107,7 +107,7 @@ distrelease()
 
 	# Upload the release to PAUSE.
 	distarchive && \
-	cd ~/cpan_archives && \
+	cd ~/archives/cpan/ && \
 	distupload "${dist_name}/${dist_name}-${dist_version}.tar.gz" && \
 
 	# Add the release bundle to the archive repository, so that older releases
@@ -117,7 +117,7 @@ distrelease()
 	git push && \
 
 	# Go back to the original directory.
-	cd "$HOME/cpan/$dist_name" && \
+	cd "$HOME/cpan/author/$dist_name" && \
 
 	echo -e "\e[0;92m✔ $dist_version release complete.\e[0m"
 }

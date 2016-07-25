@@ -22,5 +22,5 @@ die 'Could not find the distribution name'
 	if !defined( $name ) || ( $name !~ /\w/ );
 
 # Generate archive.
-print `git archive --prefix=$name-$version/ HEAD^{tree} | gzip > ~/cpan_archives/$name/$name-$version.tar.gz`;
+print `git archive --prefix=$name-$version/ HEAD^{tree} | gzip > ~/archives/cpan/$name/$name-$version.tar.gz`;
 print "Generated archive for $name $version.\n";
