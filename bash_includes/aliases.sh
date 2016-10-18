@@ -14,7 +14,7 @@ alias p='pwd'
 alias s='sudo -E'
 
 # Set up line counter.
-alias cloc='perl $HOME/dot-files/tools/cloc-1.60.pl --read-lang-def=$HOME/dot-files/tools/cloc_definitions.txt'
+alias cloc='perl $HOME/dot-files/tools/cloc-1.70.pl --read-lang-def=$HOME/dot-files/tools/cloc_definitions.txt'
 
 # Alias to inspect memory use.
 alias mem='sudo python $HOME/dot-files/tools/ps_mem/ps_mem.py'
