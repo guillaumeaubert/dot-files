@@ -117,3 +117,10 @@ autocmd FileType perl set commentstring=#\ %s
 " Keep 3 lines at the top and bottom when scrolling, to give better context.
 set scrolloff=3
 set sidescrolloff=3
+
+" F2 as a shortcut to execute the current buffer and F3 to close the output.
+let bexec_splitdir="ver"
+set splitright
+nmap <silent> <unique> <F2> :Bexec()<CR>
+vmap <silent> <unique> <F2> :BexecVisual()<CR>
+nmap <silent> <unique> <F3> :BexecCloseOut<CR>

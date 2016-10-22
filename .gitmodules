@@ -28,3 +28,6 @@
 [submodule "vim/bundle/javascript-syntax"]
 	path = vim/bundle/javascript-syntax
 	url = https://github.com/jelera/vim-javascript-syntax.git
+[submodule "vim/bundle/bexec"]
+	path = vim/bundle/bexec
+	url = https://github.com/fboender/bexec
