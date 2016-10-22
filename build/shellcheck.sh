@@ -16,7 +16,7 @@ shellcheck_skip="
 "
 
 # Linting errors to ignore.
-export SHELLCHECK_OPTS="-e SC2164"
+export SHELLCHECK_OPTS="-e SC2164 -e SC1090"
 
 
 ### FUNCTIONS
