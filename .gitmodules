@@ -31,3 +31,6 @@
 [submodule "vim/bundle/bexec"]
 	path = vim/bundle/bexec
 	url = https://github.com/fboender/bexec
+[submodule "tools/git_inspector"]
+	path = tools/git_inspector
+	url = https://github.com/ejwa/gitinspector.git

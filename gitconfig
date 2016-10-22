@@ -22,6 +22,7 @@
 	churn = "!~/dot-files/tools/git-churn.sh"
 	assume = "update-index --assume-unchanged"
 	unassume = "update-index --no-assume-unchanged"
+	inspector = "!~/dot-files/tools/git_inspector/gitinspector.py"
 
 [grep]
 	lineNumber = true
