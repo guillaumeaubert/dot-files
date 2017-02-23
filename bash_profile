@@ -39,3 +39,9 @@ source ~/dot-files/bash_includes/motd.sh
 if [ -f ~/.bash_proprietary ]; then
 	source ~/.bash_proprietary
 fi
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# Load RVM into a shell session *as a function*.
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
