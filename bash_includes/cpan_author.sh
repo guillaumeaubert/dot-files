@@ -38,8 +38,9 @@ alias distprereq='perl $HOME/dot-files/tools/list_distribution_prereqs.pl'
 # Update copyright year for distributions.
 distcopyright()
 {
-	cat MANIFEST |
-		xargs  -I % perl -0777 -i -pe 's/(copyright (?:\(c\) )?\d{4})(?:-\d{4})?( (?:by )?Guillaume Aubert)/${1}-2017${2}/ig' %
+	# shellcheck disable=SC2002,SC2016
+	cat MANIFEST | \
+	xargs -I % perl -0777 -i -pe 's/(copyright (?:\(c\) )?\d{4})(?:-\d{4})?( (?:by )?Guillaume Aubert)/${1}-2017${2}/ig' %
 }
 export -f distcopyright
 
