@@ -110,6 +110,7 @@ distrelease()
 
 	# Commit the changelog and version bump info.
 	git commit -a -m "Release version $dist_version." && \
+	git push && \
 	git tag "$dist_version" && \
 	git push origin "$dist_version" && \
 
