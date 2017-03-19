@@ -53,9 +53,9 @@ all_dists()
 	# shellcheck disable=SC2124
 	command=$@
 
-	# Retrieve all the directories under ~/cpan/.
+	# Retrieve all the directories under ~/cpan/author/.
 	dists_found=0
-	for dist in ~/cpan/*/; do
+	for dist in ~/cpan/author/*/; do
 		cd "$dist"
 
 		# Skip directories that are not a git repository.
