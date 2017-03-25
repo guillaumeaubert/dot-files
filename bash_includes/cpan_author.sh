@@ -80,6 +80,14 @@ all_dists()
 }
 export -f all_dists
 
+# See all the distributions that have unreleased changes and a list of the
+# corresponding commits yet to be released.
+distunreleased()
+{
+	all_dists 'git graph `git describe --tags --abbrev=0`..HEAD'
+}
+export -f distunreleased
+
 # Function to release a CPAN module.
 distrelease()
 {
