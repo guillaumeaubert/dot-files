@@ -84,6 +84,7 @@ export -f all_dists
 # corresponding commits yet to be released.
 distunreleased()
 {
+	# shellcheck disable=SC2016
 	all_dists 'git graph `git describe --tags --abbrev=0`..HEAD'
 }
 export -f distunreleased
