@@ -23,6 +23,7 @@
 	assume = "update-index --assume-unchanged"
 	unassume = "update-index --no-assume-unchanged"
 	inspector = "!~/dot-files/tools/git_inspector/gitinspector.py"
+	allfiles = "!git log --pretty=format: --name-only --diff-filter=A | sed '/^$/d' | sort | uniq"
 
 [grep]
 	lineNumber = true
