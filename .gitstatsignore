@@ -1,0 +1,6 @@
+/bash_includes/git-completion.sh
+/git-completion.bash
+/tools/cloc-*.pl
+/tools/ps_mem/
+/vim/autoload/
+/vim/plugin/
