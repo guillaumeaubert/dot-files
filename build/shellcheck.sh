@@ -41,7 +41,7 @@ check() {
 }
 
 is_compatible() {
-  head -n1 "$1" | egrep -w "sh|bash|ksh" > /dev/null 2>&1
+  head -n1 "$1" | grep -Ew "sh|bash|ksh" > /dev/null 2>&1
 }
 
 is_excluded() {
@@ -55,7 +55,7 @@ is_excluded() {
 }
 
 find_scripts() {
-  git ls-tree -r HEAD | egrep '^1007|.*\..*sh$' | awk '{print $4}'
+  git ls-tree -r HEAD | grep -E '^1007|.*\..*sh$' | awk '{print $4}'
 }
 
 
