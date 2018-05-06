@@ -53,13 +53,5 @@ alias mkdir='mkdir -p'
 # Test CPU.
 alias testcpu='sysbench --test=cpu --cpu-max-prime=20000 run'
 
-# Sometimes VirtualBox doesn't auto-start properly and needs to be set up
-# again.
-alias kickvbox='sudo /etc/init.d/vboxdrv setup && sudo /etc/init.d/vboxweb-service restart'
-
 # Quickly find a file in the current directory or below.
 alias ffind='find . -name'
-
-# Exit the vim way.
-alias q='logout'
-alias :q='logout'
