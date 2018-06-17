@@ -24,9 +24,34 @@ set tabstop=2
 " Show cursor position.
 set ruler
 
+" Configure ALE.
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_enter = 0
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
+
 " Add status bar.
+function! LinterStatus() abort
+	let l:counts = ale#statusline#Count(bufnr(''))
+
+	let l:all_errors = l:counts.error + l:counts.style_error
+	let l:all_non_errors = l:counts.total - l:all_errors
+
+	if l:counts.total == 0
+		return 'Syntax OK'
+	endif
+
+	let l:status = ''
+	if l:all_non_errors != 0
+		let l:status .= printf('/!\ %d WARN ', all_non_errors)
+	endif
+	if l:all_errors != 0
+		let l:status .= printf('/!\ %d ERR ', all_errors)
+	endif
+	return l:status
+endfunction
 set laststatus=2
-set statusline=%<%f\ %h%m%r%a%=%{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\"}\ %y\ [%{&ff}]\ 0x%B\ %l,%c%V\ [%p%%]\ %P
+set statusline=%<%f\ %h%m%r%a%=%{LinterStatus()}\ %{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\"}\ %y\ [%{&ff}]\ 0x%B\ %l,%c%V\ [%p%%]\ %P
 hi StatusLine ctermfg=Gray ctermbg=Black
 
 " Display list in status bar when using tab autocompletion.
