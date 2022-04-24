@@ -2,3 +2,5 @@
 	default = simple
 [include]
 	path=~/dot-files/gitconfig
+[user]
+	email = me@aubertg.com
